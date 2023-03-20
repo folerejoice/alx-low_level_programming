@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  * Description: 'Print Alphabet in reverse'
@@ -6,13 +8,12 @@
  */
 int main(void)
 {       
-        int n = 122;
+	
+        char low;
 
-	while(n >= 99)
-	{
-		putchar(n);
-		n--;
-	}
+	for (low = 'z'; low >= 'a'; low--)
+	putchar(low);
 	putchar('\n');
+
         return (0);
 }  
